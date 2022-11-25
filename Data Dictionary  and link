@@ -1,0 +1,331 @@
+https://www.arcgis.com/sharing/rest/content/items/c5fb3fbe4c694a59a6eef7bf5f8bc49a/info/metadata/metadata.xml?format=default&output=html
+Computer Assisted Mass Appraisal - Residential
+Identification Information:
+Citation:
+Citation Information:
+Publication Date: 20150227
+Title: Computer Assisted Mass Appraisal - Residential
+Geospatial Data Presentation Form: tabular digital data
+Publication Information:
+Publisher: GIS Data Coordinator
+Other Citation Details: DC GIS updates CAMA data on a weekly basis.
+Larger Work Citation:
+Citation Information:
+Title: DC Geographic Information System
+Description:
+Abstract: Data source is the Office of Tax and Revenue’s Computer-Assisted Mass Appraisal (CAMA) system. The CAMA system is used by the Assessment Division (AD) within the Real Property Tax Administration to value real estate for ad valorem real property tax purposes.The intent of this data is to provide a sale history for active properties listed among the District of Columbia’s real property tax assessment roll. This data is updated daily. The AD constantly maintains sale data, adding new data and updating existing data. Daily updates represent a “snapshot” at the time the data was extracted from the CAMA system, and data is always subject to change.
+Purpose: Computer Assisted Mass Appraisal (CAMA) database. The dataset contains attribution on housing characteristics for residential properties, and was created as part of the DC Geographic Information System (DC GIS) for the D.C. Office of the Chief Technology Officer (OCTO) and participating D.C. government agencies. Properties on the assessment roll are primarily identified by Square, Suffix, Lot (SSL). Data will be most useful when joined by SSL to other real property data.
+Supplemental Information: Most lots have one building in the CAMA file, assigned BLDG_NUM of one in the table. For parcels where multiple buildings exist, the primary building (such as the main residence) is assigned BLDG_NUM = 1. The other buildings or structures have BLDG_NUM values in random sequential order. After the primary structure, there is no way to associate BLDG_NUM > 2 records with any particular structure on the lot.
+Status:
+Progress: Complete
+Maintenance and Update Frequency: Weekly
+Spatial Domain:
+Bounding Coordinates:
+West Bounding Coordinate: -77.13
+East Bounding Coordinate: -76.9
+North Bounding Coordinate: 39.01
+South Bounding Coordinate: 38.78
+Keywords:
+Theme:
+Theme Keyword Thesaurus: ISO 19115 Topic Categories
+Theme Keyword: planningCadastre
+Place:
+Place Keyword Thesaurus: None
+Place Keyword: District of Columbia
+Place Keyword: Washington DC
+Access Constraints: Other Constraints
+Use Constraints: This work is licensed under a Creative Commons Attribution 4.0 International License.DISCLAIMER: This public data and information are provided by the District of Columbia, and the data and information are accepted and used by the recipient with the understanding that the data and information were developed and collected for real property assessment purposes only. No liability is assumed with the use of the data or information or with their accuracy, sufficiency, or suitability for any use whatsoever outside the originally intended purpose exclusively for and by the District’s Office of Tax and Revenue. Data source is the Office of Tax and Revenue’s Computer-Assisted Mass Appraisal (CAMA) system.
+Point of Contact:
+Contact Information:
+Contact Organization Primary:
+Contact Organization: D.C. Office of the Chief Technology Officer
+Contact Person: GIS Data Coordinator
+Contact Position: GIS Data Coordinator
+Contact Address:
+Address Type: mailing and physical
+Address: 200 I Street SE, 5th Floor
+City: Washington
+State or Province: DC
+Postal Code: 20003
+Contact Voice Telephone: (202) 727-2277
+Contact Facsimile Telephone: (202) 727-5660
+Contact Electronic Mail Address: dcgis@dc.gov
+Hours: 8:30 am - 5:00 pm
+Data Set Credit: DC Office of Tax and Revenue (OTR) Computer Assisted Mass Appraisal database and DC OCTO.
+Native Data Set Environment: Version 6.2 (Build 9200) ; Esri ArcGIS 10.6.1.9270
+Data Quality Information:
+Attribute Value Accuracy Information:
+Attribute Accuracy Report: Data believed to be complete and accurate, subject to change. Validated by source and/or responsible agency.
+Logical Consistency Report: In process of validation by source and/or responsible agency.
+Completeness Report: Data believed to be complete and accurate, subject to change. Validated by source and/or responsible agency.
+Positional Accuracy:
+Horizontal Positional Accuracy:
+Horizontal Positional Accuracy Report: In process of validation by source and/or responsible agency. Points placed within parcels shown on tax map scans.
+Vertical Positional Accuracy:
+Vertical Positional Accuracy Report: N/A
+Lineage:
+Source Information:
+Source Citation:
+Citation Information:
+Publication Date: 20050101
+Title: Ownerpoint
+Type of Source Media: None
+Source Citation Abbreviation: Ownerpoint
+Source Contribution: location and attribution
+Source Information:
+Source Citation:
+Citation Information:
+Publication Date: 20050101
+Title: Computer Assisted Mass Appraisal Database
+Type of Source Media: None
+Source Citation Abbreviation: Computer Assisted Mass Appraisal Database
+Source Contribution: locations and attributes
+Process Step:
+Process Description:
+OTR provides a dump of the Computer Assisted Mass Appraisal (CAMA) Data quarterly in MS Access database format. The database consists of the following tables: Comm_Extract (Commercial) Condo_Extract (Condos) Res_Extract (Residential) Each CAMA table contains an SSL field. However, there are multiple records per SSL creating a many-to-one relate with the ownerpoint dataset. Thus, the tabular gets processed first to generate unique records per SSL. Staff generated the the unique record tables through four steps: 1 - Copy the table structure of the existing CAMA tables. 2 - Build three select queries to access the unique records. 3 - Change the select queries to append queries and define them to append the filtered records to the new templates. 4 - Run the append queries to create the unique record tables. Next, staff joined each unique record table to the ownerpoint to spatially enable each CAMA data type: commercial, condo, and residential. As part of this process, staff created a slimmed down version of the ownerpoint table since most of the fields are not used. Staff generated the feature classes by: 1 - Establishing GIS data architecture for spatial data and create the base real property layers for this process. 2 - Generating the spatial layers for the CAMA data by joining them to the slimmed down version of the owner point layer. 3 - Stripping Date Fields from ownerpoints. 4 - Selecting all of the records with a CAMA SSL value and creating a layer from the selected features. 5 - Exporting the selection layer to a new feature class. 6 - Incorporating and updating metadata. These steps are run on all three CAMA tables.
+Process Contact:
+Contact Information:
+Contact Organization Primary:
+Contact Organization: D.C. Office of the Chief Technology Officer
+Contact Person: GIS Data Coordinator
+Contact Position: GIS Data Coordinator
+Contact Address:
+Address Type: mailing and physical
+Address: 200 I Street SE, 5th Floor
+City: Washington
+State or Province: DC
+Postal Code: 20003
+Contact Voice Telephone: (202) 727-2277
+Contact Facsimile Telephone: (202) 727-5660
+Contact Electronic Mail Address: dcgis@dc.gov
+Hours: 8:30 am - 5:00 pm
+Process Step:
+Process Description:
+Added LIVING column which contains the livable square footage of a residence.
+Process Date: 20111121
+Process Contact:
+Contact Information:
+Contact Organization Primary:
+Contact Organization: D.C. Office of the Chief Technology Officer
+Contact Person: GIS Data Coordinator
+Contact Position: GIS Data Coordinator
+Contact Address:
+Address Type: mailing and physical
+Address: 200 I Street SE, 5th Floor
+City: Washington
+State or Province: DC
+Postal Code: 20003
+Contact Voice Telephone: (202) 727-2277
+Contact Facsimile Telephone: (202) 727-5660
+Contact Electronic Mail Address: dcgis@dc.gov
+Hours: 8:30 am - 5:00 pm
+Entity and Attribute Information:
+Detailed Description:
+Entity Type:
+Entity Type Label: DCGIS.CAMA_RES
+Entity Type Definition: Residential property appraisal values.
+Entity Type Definition Source: DC OCTO
+Attribute:
+Attribute Label: OBJECTID
+Attribute Definition: Internal feature number.
+Attribute Definition Source: ESRI
+Attribute Domain Values:
+Unrepresentable Domain: Sequential unique whole numbers that are automatically generated.
+Attribute:
+Attribute Label: SSL
+Attribute Definition: Square, suffix, and lot number.
+Attribute Definition Source: DC OCTO
+Attribute:
+Attribute Label: BATHRM
+Attribute Definition: Number of bathrooms.
+Attribute Definition Source: DC OCTO
+Attribute:
+Attribute Label: HF_BATHRM
+Attribute Definition: Number of half bathrooms.
+Attribute Definition Source: DC OCTO
+Attribute:
+Attribute Label: HEAT
+Attribute Definition: Heat type code.
+Attribute Definition Source: DC OCTO
+Attribute:
+Attribute Label: HEAT_D
+Attribute Definition: Heating type description.
+Attribute Definition Source: DC OCTO
+Attribute:
+Attribute Label: AC
+Attribute Definition: Air conditioning in residence.
+Attribute Definition Source: DC OCTO
+Attribute:
+Attribute Label: NUM_UNITS
+Attribute Definition: Number of units.
+Attribute Definition Source: DC OCTO
+Attribute:
+Attribute Label: ROOMS
+Attribute Definition: Number of rooms.
+Attribute Definition Source: DC OCTO
+Attribute:
+Attribute Label: BEDRM
+Attribute Definition: Number of bedrooms.
+Attribute Definition Source: DC OCTO
+Attribute:
+Attribute Label: AYB
+Attribute Definition: The earliest time the main portion of the building was built. It is not affected by subsequent construction.
+Attribute Definition Source: DC OCTO
+Attribute:
+Attribute Label: YR_RMDL
+Attribute Definition: Last year residence was remodeled.
+Attribute Definition Source: DC OCTO
+Attribute:
+Attribute Label: EYB
+Attribute Definition: The calculated or apparent year that an improvement was built that is most often more recent than actual year built.
+Attribute Definition Source: DC OCTO
+Attribute:
+Attribute Label: STORIES
+Attribute Definition: Number of stories in primary dwelling.
+Attribute Definition Source: DC OCTO
+Attribute:
+Attribute Label: SALEDATE
+Attribute Definition: Date of most recent sale.
+Attribute Definition Source: DC OCTO
+Attribute:
+Attribute Label: PRICE
+Attribute Definition: Price of most recent sale.
+Attribute Definition Source: DC OCTO
+Attribute:
+Attribute Label: QUALIFIED
+Attribute Definition: Qualified.
+Attribute Definition Source: DC OCTO
+Attribute:
+Attribute Label: SALE_NUM
+Attribute Definition: Sale number (always 1 to get most recent sale).
+Attribute Definition Source: DC OCTO
+Attribute:
+Attribute Label: GBA
+Attribute Definition: Gross building area in square feet.
+Attribute Definition Source: DC OCTO
+Attribute:
+Attribute Label: BLDG_NUM
+Attribute Definition: Building number on property (1 is primary dwelling).
+Attribute Definition Source: DC OCTO
+Attribute:
+Attribute Label: STYLE
+Attribute Definition: Style code.
+Attribute Definition Source: DC OCTO
+Attribute:
+Attribute Label: STYLE_D
+Attribute Definition: Style description.
+Attribute Definition Source: DC OCTO
+Attribute:
+Attribute Label: STRUCT
+Attribute Definition: Structure code.
+Attribute Definition Source: DC OCTO
+Attribute:
+Attribute Label: STRUCT_D
+Attribute Definition: Structure description.
+Attribute Definition Source: DC OCTO
+Attribute:
+Attribute Label: GRADE
+Attribute Definition: Grade code.
+Attribute Definition Source: DC OCTO
+Attribute:
+Attribute Label: GRADE_D
+Attribute Definition: Grade description.
+Attribute Definition Source: DC OCTO
+Attribute:
+Attribute Label: CNDTN
+Attribute Definition: Condition code.
+Attribute Definition Source: DC OCTO
+Attribute:
+Attribute Label: CNDTN_D
+Attribute Definition: Condition description.
+Attribute Definition Source: DC OCTO
+Attribute:
+Attribute Label: EXTWALL
+Attribute Definition: Exterior wall code.
+Attribute Definition Source: DC OCTO
+Attribute:
+Attribute Label: EXTWALL_D
+Attribute Definition: Exterior wall description.
+Attribute Definition Source: DC OCTO
+Attribute Domain Values:
+Unrepresentable Domain: Coordinates defining the features.
+Attribute:
+Attribute Label: ROOF
+Attribute Definition: Roof type code.
+Attribute Definition Source: DC OCTO
+Attribute Domain Values:
+Unrepresentable Domain: Coordinates defining the features.
+Attribute:
+Attribute Label: ROOF_D
+Attribute Definition: Roof type description.
+Attribute Definition Source: DC OCTO
+Attribute:
+Attribute Label: INTWALL
+Attribute Definition: Interior wall code.
+Attribute Definition Source: DC OCTO
+Attribute:
+Attribute Label: INTWALL_D
+Attribute Definition: Interior wall description.
+Attribute Definition Source: DC OCTO
+Attribute:
+Attribute Label: KITCHENS
+Attribute Definition: Number of kitchens.
+Attribute Definition Source: DC OCTO
+Attribute:
+Attribute Label: FIREPLACES
+Attribute Definition: Number of fireplaces.
+Attribute Definition Source: DC OCTO
+Attribute:
+Attribute Label: USECODE
+Attribute Definition: Property use code.
+Attribute Definition Source: DC OCTO
+Attribute Domain Values:
+Unrepresentable Domain: Visit http://opendata.dc.gov/datasets/integrated-tax-system-use-codes-lookup or http://otr.cfo.dc.gov/publication/real-property-use-code-listing for more info.
+Attribute:
+Attribute Label: LANDAREA
+Attribute Definition: Land area of property in square feet.
+Attribute Definition Source: DC OCTO
+Attribute:
+Attribute Label: GIS_LAST_MOD_DTTM
+Attribute Definition: Date and time information was last modified.
+Attribute Definition Source: DC OCTO
+Distribution Information:
+Distributor:
+Contact Information:
+Contact Organization Primary:
+Contact Organization: D.C. Office of the Chief Technology Officer
+Contact Person: GIS Data Coordinator
+Contact Position: GIS Data Coordinator
+Contact Address:
+Address Type: mailing and physical
+Address: 200 I Street SE, 5th Floor
+City: Washington
+State or Province: DC
+Postal Code: 20003
+Contact Voice Telephone: (202) 727-2277
+Contact Facsimile Telephone: (202) 727-5660
+Contact Electronic Mail Address: dcgis@dc.gov
+Hours: 8:30 am - 5:00 pm
+Distribution Liability: See access and use constraints information.
+Custom Order Process: DC datasets can be downloaded from "https://opendata.dc.gov".
+Metadata Reference Information:
+Metadata Date: 20220512
+Metadata Contact:
+Contact Information:
+Contact Organization Primary:
+Contact Organization: D.C. Office of the Chief Technology Officer
+Contact Person: GIS Data Coordinator
+Contact Position: GIS Data Coordinator
+Contact Address:
+Address Type: mailing and physical
+Address: 200 I Street SE, 5th Floor
+City: Washington
+State or Province: DC
+Postal Code: 20003
+Contact Voice Telephone: (202) 727-2277
+Contact Facsimile Telephone: (202) 727-5660
+Contact Electronic Mail Address: dcgis@dc.gov
+Hours: 8:30 am - 5:00 pm
+Metadata Standard Name: FGDC Content Standard for Digital Geospatial Metadata
+Metadata Standard Version: FGDC-STD-001-1998
+Metadata Time Convention: local time
